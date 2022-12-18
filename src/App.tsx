@@ -14,7 +14,7 @@ function App() {
 
   const handleSearch = (search: string) => {
     setSearch('')
-    axios.get(`http://www.omdbapi.com/?i=tt3896198&apikey=58738731&s=${search}`)
+    axios.get(`https://www.omdbapi.com/?i=tt3896198&apikey=58738731&s=${search}`)
       .then(res => {
         setMovies(res.data.Search)
       })
